@@ -1,4 +1,4 @@
-const spinners = ["bafl", "bmo", "camper", "fakas", "mafn", "megafire", "n00beh", "tsouki", "kean"];
+const spinners = ["bafl", "bmo", "camper", "fakas", "mafn", "megafire", "n00beh", "tsouki", "kean", "weirdwolf"];
 const spinner_name = spinners[Math.floor(Math.random() * spinners.length)];
 const spinner_src = "images/spinners/" + spinner_name + ".png";
 const spinner = new Image();
@@ -6,14 +6,15 @@ spinner.src = spinner_src;
 
 const messages = [
     "Extending Bafl's hitbox...",
-    "Banning BMO for RDM...",
+    "Raising BMO's karma...",
     "Discombobulating Camper...",
     "Removing Fakas from your head...",
     "Yeeting Mafn out of an airlock...",
     "Turning MegaFire's corpse into a bomb...",
     "Spawning an explosive barrel near n00beh...",
     "Lowering Tsouki's karma...",
-    "Infecting Kean..."
+    "Infecting Kean...",
+    "Yiffing WeirdWolf..."
 ];
 
 var files_total = 0;

@@ -49,14 +49,12 @@ function DownloadingFile(name) {
 }
 
 function SetStatusChanged(gmod_status) {
-    if(gmod_status.substring(0,8) === "Loading ") {
+    if(gmod_status.indexOf(" Loading ") !== -1) {
         status = "Loading addons...";
-        load_status = gmod_status.substring(8);
-    } else {
-        // status = messages[Math.floor(Math.random() * messages.length)];
-        // load_status = "";
-        status = gmod_status;
         load_status = gmod_status;
+    } else {
+        status = messages[Math.floor(Math.random() * messages.length)];
+        load_status = "";
     }
     document.getElementById("status").innerText = status;
     document.getElementById("loading").innerText = load_status;

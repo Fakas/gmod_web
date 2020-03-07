@@ -53,8 +53,10 @@ function SetStatusChanged(gmod_status) {
         status = "Loading addons...";
         load_status = gmod_status.substring(8);
     } else {
-        status = messages[Math.floor(Math.random() * messages.length)];
-        load_status = "";
+        // status = messages[Math.floor(Math.random() * messages.length)];
+        // load_status = "";
+        status = gmod_status;
+        load_status = gmod_status;
     }
     document.getElementById("status").innerText = status;
     document.getElementById("loading").innerText = load_status;

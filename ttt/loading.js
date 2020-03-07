@@ -1,4 +1,4 @@
-const spinners = ["bafl", "bmo", "camper", "fakas", "mafn", "megafire", "n00beh", "tsouki", "kean", "weirdwolf"];
+const spinners = ["bafl", "bmo", "camper", "fakas", "mafn", "megafire", "n00beh", "tsouki", "kean", "weirdwolf", "jay"];
 const spinner_name = spinners[Math.floor(Math.random() * spinners.length)];
 const spinner_src = "images/spinners/" + spinner_name + ".png";
 const spinner = new Image();
@@ -14,7 +14,8 @@ const messages = [
     "Spawning an explosive barrel near n00beh...",
     "Lowering Tsouki's karma...",
     "Infecting Kean...",
-    "Yiffing WeirdWolf..."
+    "Yiffing WeirdWolf...",
+    "Deleting Jay's textures..."
 ];
 
 var files_total = 0;
